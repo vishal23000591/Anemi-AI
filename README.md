@@ -27,14 +27,13 @@ The project utilizes RGB pixel intensity analysis and a dual-output neural netwo
 
 The system follows a modular architecture consisting of:
 
-1. Image capture using a web camera
-2. Preprocessing and RGB feature extraction
-3. Feature normalization using trained scalers
-4. Dual-output neural network:
-
+1. **Image Capture** using a web camera
+2. **Preprocessing** and RGB feature extraction
+3. **Feature Normalization** using trained scalers
+4. **Dual-Output Neural Network**:
    * Classification for anaemia detection
    * Regression for haemoglobin prediction
-5. REST API for frontend-backend communication
+5. **REST API** for frontend-backend communication
 
 ---
 
@@ -79,48 +78,47 @@ The dataset was preprocessed, normalized, and split into training and testing se
 
 ## Model Training
 
-* Input features: Red, Green, Blue pixel percentages
-* Outputs:
-
-  * Binary classification for anaemia
-  * Continuous regression for haemoglobin level
-* Loss functions:
-
-  * Binary Crossentropy for classification
-  * Mean Squared Error for regression
-* Optimizer: Adam
+* **Input features:** Red, Green, Blue pixel percentages
+* **Outputs:**
+   * Binary classification for anaemia
+   * Continuous regression for haemoglobin level
+* **Loss functions:**
+   * Binary Crossentropy for classification
+   * Mean Squared Error for regression
+* **Optimizer:** Adam
 
 ---
 
 ## Installation and Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
 
-   ```
-   git clone https://github.com/your-username/AnemiAI.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```
-   cd AnemiAI
+   ```bash
+   git clone https://github.com/vishal23000591/Anemi-AI.git
    ```
 
-3. Install dependencies:
+2. **Navigate to the project directory:**
 
+   ```bash
+   cd Anemi-AI
    ```
+
+3. **Install dependencies:**
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-4. Run the backend server:
+4. **Run the backend server:**
 
-   ```
+   ```bash
    python app.py
    ```
 
-5. Start the frontend application:
+5. **Start the frontend application:**
 
-   ```
+   ```bash
+   cd frontend
    npm install
    npm start
    ```
@@ -131,11 +129,11 @@ The dataset was preprocessed, normalized, and split into training and testing se
 
 ### Prediction Endpoint
 
-```
+```bash
 POST /predict
 ```
 
-**Request Body**
+**Request Body:**
 
 ```json
 {
@@ -145,7 +143,7 @@ POST /predict
 }
 ```
 
-**Response**
+**Response:**
 
 ```json
 {
@@ -199,8 +197,15 @@ Register Number: 212223110063
 Department: BE Computer Science and Engineering (IoT)
 Saveetha Engineering College
 
----
-
 ## License
 
 This project is developed for academic and research purposes.
+
+---
+
+## Status
+
+**Current Version:** Alpha
+**Last Updated:** 2024
+
+This project is currently in active development. We welcome contributions and improvements from the community!
